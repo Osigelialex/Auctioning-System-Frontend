@@ -43,7 +43,6 @@ instance.interceptors.response.use(
   error => {
     if (error.response && error.response.status === 401) {
       Cookies.remove("accessToken");
-      window.location.href = "/login";
     }
     return Promise.reject(error);
   }

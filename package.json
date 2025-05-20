@@ -19,6 +19,7 @@
     "@tabler/icons-react": "^3.5.0",
     "aos": "^2.3.4",
     "axios": "^1.6.8",
+    "bidding-system": "file:",
     "chart.js": "^4.4.2",
     "faker": "^6.6.6",
     "js-cookie": "^3.0.5",

@@ -7,6 +7,7 @@ import BiddingList from "../Components/atom/BiddingList";
 import { useAuth } from "../hooks/AuthProvider";
 import Navbar from "../Components/ui/Navbar";
 import Congratulations from "../Components/atom/Congratulations";
+import Loading from "../Components/atom/loading";
 
 const AuctionDetail = () => {
   const [product, setProduct] = useState({});
@@ -56,7 +57,7 @@ const AuctionDetail = () => {
   return (
     <div>
       {loading ? (
-        <></>
+        <Loading />
       ) : (
         <>
           <Navbar />

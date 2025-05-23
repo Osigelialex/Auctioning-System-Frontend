@@ -8,8 +8,8 @@ import { BidChart } from "./BidChart";
 import { UserChart } from "./userChart";
 import { VerticalBarChart } from "./ItemsBidChart";
 import { toast } from "sonner";
-import CircularProgress from "@mui/material/CircularProgress";
 import { formatCurrency } from "../../../utils/formatCurrency";
+import Loading from "../../atom/loading";
 
 const Dashboard = () => {
   const [dashboardData, setDashboardData] = useState({});
@@ -45,10 +45,8 @@ const Dashboard = () => {
 
   if (isLoading) {
     return (
-      <div className="min-h-screen grid place-items-center text-purple-500">
-        <CircularProgress size={30} />
-      </div>
-    )
+      <Loading />
+    );
   }
 
   return (

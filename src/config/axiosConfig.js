@@ -4,6 +4,7 @@ import { jwtDecode } from "jwt-decode";
 
 const instance = axios.create({
   baseURL: "https://auctioning-system-backend-production.up.railway.app",
+  // baseURL: "http://localhost:8080",
   timeout: 10000,
   withCredentials: true,
   headers: {
